@@ -1,0 +1,15 @@
+version: "0.1.0"
+log_level: "info"
+release_type: "minor"
+bb_path: "../bigbang"
+interactive: true # enable/disable interactive CLI mode
+package_overrides:
+  policy:
+    name: "policy"
+    title: "Gatekeeper"
+beta_list:
+  - "kyverno"
+  - "promtail"
+  - "loki"
+  - "tempo"
+  - "vault"

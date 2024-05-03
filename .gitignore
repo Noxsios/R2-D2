@@ -1,0 +1,11 @@
+*.pyc
+__pycache__
+.vscode
+*.log
+.pytest_cache
+.coverage
+.DS_Store
+
+release-notes-*.md
+.venv
+.devcontainer

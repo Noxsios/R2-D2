@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "R2-D2"
+version = "0.1.0"
+description = "Big Bang release interactive CLI"
+authors = ["Harry Randazzo <harry@razzle.cloud>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [
+    { include = "r2d2" }
+]
+
+[tool.poetry.scripts]
+r2d2 = 'r2d2.cli:cli'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+GitPython = "^3.1.27"
+semver = "^2.13.0"
+Jinja2 = "^3.1.1"
+pyfiglet = "^0.8.post1"
+python-gitlab = "^3.3.0"
+requests = "^2.27.1"
+keepachangelog = "2.0.0.dev2"
+emoji = "^1.7.0"
+blessed = "1.19.0"
+# pinned to 1.19.0 because of inquirer dep
+halo = "^0.0.31"
+tabulate = "^0.8.9"
+docker = "^5.0.3"
+"ruamel.yaml" = "^0.17.21"
+pathlib = "^1.0.1"
+inquirer = "2.8.0"
+# pinned to 2.8.0 due to backspace not being captured properly, resulting in needing to use CTRL+H
+
+[tool.poetry.dev-dependencies]
+isort = "^5.10.1"
+black = "^22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
